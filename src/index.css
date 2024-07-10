@@ -1,19 +1,24 @@
 .to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 100px;
-  background-color: hsla(0, 0%, 0%, 0.08);
+  background-image: url("src/assets/HeaderBG.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fafafa;
   padding: 20px;
-  border: 3px solid rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 
-h1 {
+.todo {
+  color: white;
+}
+
+.p-2 h1 {
   font-size: 4rem;
+  color: white;
 }
 
 button {
-  font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
   color: white;
@@ -21,11 +26,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s ease;
-}
-
-.add-button {
-  background-color: hsla(216, 100%, 50%);
-  margin-left: 5px;
 }
 
 .add-button:hover {
