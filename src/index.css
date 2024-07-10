@@ -1,29 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .to-do-list {
   font-family: Arial, sans-serif;
   text-align: center;
   background-image: url("src/assets/HeaderBG.jpg");
-  height: 200px;
+  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fafafa;
-  padding: 20px;
+  padding: 80px;
 }
 
-.todo {
+.HeaderRow h1 {
   color: white;
+  margin-bottom: 0;
+}
+.HeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.p-2 h1 {
-  font-size: 4rem;
-  color: white;
+.InputRow {
+  display: flex;
+  justify-content: center;
 }
 
-button {
-  font-weight: bold;
-  padding: 10px 20px;
+form .InputButton {
+  width: auto;
+  height: auto;
+  padding: 1rem 1rem;
+}
+
+.button {
+  font-weight: 500;
+  font-size: smaller;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
@@ -33,24 +49,29 @@ button {
 }
 
 .delete-button {
-  background-color: hsl(349, 100%, 50%);
+  font-size: smaller;
+  background-color: hsla(265, 81%, 70%, 0.7);
+  height: 50px;
+  padding: 0 10px;
 }
 
 .delete-button:hover {
-  background-color: hsl(349, 100%, 40%);
+  background-color: hsla(265, 81%, 80%, 0.7);
 }
 
 .move-button {
-  background-color: hsl(35, 90%, 50%);
+  background-color: hsla(226, 88%, 70%, 0.7);
+  width: 50px;
+  height: 50px;
   margin-left: 5px;
 }
 
 .move-button:hover {
-  background-color: hsl(35, 90%, 40%);
+  background-color: hsl(226, 88%, 80%, 0.7);
 }
 
 input[type="text"] {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 10px;
   border: 2px solid hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -58,17 +79,15 @@ input[type="text"] {
 }
 
 ol {
-  padding: 0;
+  padding: 0 !important;
 }
 
 li {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 15px;
+  font-size: 1.5rem;
+  padding: 10px;
   background-color: hsla(0, 0%, 97%);
-  margin-bottom: 10px;
-  border: 3px solid hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
+  border: 1px solid hsla(0, 0%, 0%, 0.5);
+  border-radius: 1px;
   display: flex;
   align-items: center;
 }
