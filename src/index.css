@@ -29,9 +29,7 @@
 }
 
 form .InputButton {
-  width: auto;
-  height: auto;
-  padding: 1rem 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .button {
